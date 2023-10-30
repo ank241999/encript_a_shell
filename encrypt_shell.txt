@@ -1,0 +1,9 @@
+
+## encrypt a shell with using prompt password 
+openssl enc -aes-256-cbc -salt -in shell.sh -out encrypted_script.sh
+
+
+## decrypt a shell with using prompt password
+
+openssl enc -d -aes-256-cbc -in encrypted_script.sh -out decrypted_script.sh -k {$password}
+ 
